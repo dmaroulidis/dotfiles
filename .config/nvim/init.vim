@@ -78,7 +78,7 @@ noremap <C-X>             :xit<CR>
 vnoremap <C-X>            <C-C>:xit<CR>
 inoremap <C-X>            <C-O>:xit<CR>
 " map t to enable text writing options (spell, textwidth)
-noremap \	:set textwidth=70<CR>:set spelllang=el<CR>:set spell<CR>
+noremap \	:set textwidth=70<CR>:set spelllang=el,en<CR>:set spell<CR>
 " run current line as shell command
 noremap Q	!!bash<CR>
 
