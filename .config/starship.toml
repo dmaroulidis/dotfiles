@@ -1,0 +1,5 @@
+[gcloud]
+disabled = true
+
+[cmd_duration]
+format = "[$duration]($style) "
