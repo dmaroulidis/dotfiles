@@ -87,6 +87,7 @@ zle -N down-line-or-beginning-search
 
 # Aliases
 alias yay="paru"
+alias ls="ls --color=auto"
 
 # Fish-like syntax highlighting and autosuggestions
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
