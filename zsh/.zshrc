@@ -90,8 +90,15 @@ alias yay="paru"
 alias ls="ls --color=auto"
 
 # Fish-like syntax highlighting and autosuggestions
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# Pacman OSes
+if command -v pacman > /dev/null; then
+	source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+	source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# Debian-based OSes
+elif command -v apt > /dev/null; then
+	source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+	source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
 
 # Load starship
 eval "$(starship init zsh)"
