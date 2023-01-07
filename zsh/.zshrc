@@ -18,6 +18,8 @@ fi
 unsetopt BEEP
 # Turn off autocomplete beeps
 # unsetopt LIST_BEEP
+# Ignore space prepended commands
+setopt HIST_IGNORE_SPACE
 
 # PATH
 function addtopath() {
