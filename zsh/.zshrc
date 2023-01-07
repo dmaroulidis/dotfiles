@@ -96,6 +96,10 @@ alias ls="ls --color=auto"
 if command -v pacman > /dev/null; then
 	source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 	source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+	# command-not-found handler using pkgfile
+	# sudo pkgfile -u to update cache
+	source /usr/share/doc/pkgfile/command-not-found.zsh
+
 # Debian-based OSes
 elif command -v apt > /dev/null; then
 	source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
