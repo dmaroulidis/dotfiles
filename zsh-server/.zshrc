@@ -93,7 +93,6 @@ zle -N down-line-or-beginning-search
 [[ -n "${key[Down]}" ]] && bindkey -- "${key[Down]}" down-line-or-beginning-search
 
 # Aliases
-alias yay="paru"
 alias ls="ls --color=auto"
 
 # Fish-like syntax highlighting and autosuggestions
