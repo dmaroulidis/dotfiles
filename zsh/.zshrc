@@ -106,5 +106,22 @@ elif command -v apt > /dev/null; then
 	source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
 
+activate_conda () {
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/dimitris/Applications/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/dimitris/Applications/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/dimitris/Applications/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/dimitris/Applications/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+}
+
 # Load starship
 eval "$(starship init zsh)"
