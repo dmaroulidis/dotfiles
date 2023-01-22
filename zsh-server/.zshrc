@@ -3,7 +3,7 @@ compinit
 promptinit
 
 prompt_star_setup () {
-	PS1=%B%F{yellow}'%n'%f%b' in '%B%F{green}'%m%'f%b' in '%B%F{cyan}%~%f%b$prompt_newline'> '
+	PS1=%B%F{yellow}'%n'%f%b' in '%B%F{green}'%m%'f%b' in '%B%F{cyan}%~%f%b$prompt_newline%B'> '%b
 	prompt_opts=(cr subst percent)
 }
 prompt_themes+=( star ) 
