@@ -125,3 +125,5 @@ unset __conda_setup
 
 # Load starship
 eval "$(starship init zsh)"
+# Load atuin (history sever /search)
+eval "$(atuin init zsh)"
