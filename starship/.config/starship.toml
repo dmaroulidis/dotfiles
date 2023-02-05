@@ -66,6 +66,7 @@ symbol = " "
 
 [nodejs]
 symbol = " "
+disabled = true
 
 [os.symbols]
 Alpine = " "
