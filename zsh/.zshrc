@@ -90,6 +90,7 @@ zle -N down-line-or-beginning-search
 # Aliases
 alias yay="paru"
 alias ls="ls --color=auto"
+alias llatex="lualatex -synctex=1 -interaction=nonstopmode"
 
 # Fish-like syntax highlighting and autosuggestions
 # Pacman OSes
