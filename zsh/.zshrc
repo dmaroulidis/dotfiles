@@ -91,6 +91,7 @@ zle -N down-line-or-beginning-search
 alias yay="paru"
 alias ls="ls --color=auto"
 alias llatex="lualatex -synctex=1 -interaction=nonstopmode"
+alias upgrade-hosts="cd ~/Projects/home-sysadmin && ansible-playbook -i inventory/penteli -i inventory/chania -i inventory/oracle-cloud -i inventory/google-cloud --ask-become-pass  ./playbooks/apt.yml; cd -"
 
 # Fish-like syntax highlighting and autosuggestions
 # Pacman OSes
