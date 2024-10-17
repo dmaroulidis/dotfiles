@@ -91,7 +91,7 @@ zle -N down-line-or-beginning-search
 alias yay="paru"
 alias ls="ls --color=auto"
 alias llatex="lualatex -synctex=1 -interaction=nonstopmode"
-alias upgrade-hosts="cd ~/Projects/home-sysadmin && ansible-playbook -i inventory/penteli -i inventory/patras -i inventory/oracle-cloud -i inventory/google-cloud -i inventory/okeanos-cloud -f 30 ./playbooks/apt.yml; cd -"
+alias upgrade-hosts="cd ~/Projects/home-sysadmin && ansible-playbook -i inventory/penteli -i inventory/patras -i inventory/london -i inventory/oracle-cloud -i inventory/google-cloud -i inventory/okeanos-cloud -f 30 ./playbooks/apt.yml; cd -"
 alias batt="upower -i $(upower -e | grep BAT) | grep -E 'state|to full|to empty|percentage'"
 
 # Fish-like syntax highlighting and autosuggestions
