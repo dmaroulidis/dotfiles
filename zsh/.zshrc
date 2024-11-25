@@ -126,6 +126,21 @@ unset __conda_setup
 # <<< conda initialize <<<
 }
 
+# Functions
+mpass() {
+    if [ $1 ]; then
+        length=$1
+    else
+        length=15
+    fi
+    _hash=`python3 -c "
+import os,base64
+exec('print(base64.b64encode(os.urandom(64))[:${length}].decode(\'utf-8\'))')
+    "`
+    echo $_hash | xclip -selection clipboard
+    echo "new password copied to the system clipboard"
+}
+
 # Load starship
 eval "$(starship init zsh)"
 # Load atuin (history sever /search)
