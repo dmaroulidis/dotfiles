@@ -56,13 +56,19 @@ let g:netrw_banner=0        " disable annoying banner
 let g:netrw_browse_split=4  " open in prior window
 let g:netrw_altv=1          " open splits to the right
 let g:netrw_liststyle=3     " tree view
-let g:netrw_list_hide=netrw_gitignore#Hide()
-let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
+"let g:netrw_list_hide=netrw_gitignore#Hide()
+"let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 " NOW WE CAN:
 " - :edit a folder to open a file browser
 " - <CR>/v/t to open in an h-split/v-split/tab
 " - check |netrw-browse-maps| for more mappings
+
+" vimwiki setup
+let g:vimwiki_list = [{'syntax': 'markdown',
+			\ 'ext': 'md',
+			\ 'path': '~/Documents/share/Obsidian/Personal'}]
+let g:vimwiki_global_ext = 0
 
 " KEYBOARD SHORTCUTS:
 noremap <silent> <C-S>    :update<CR>
@@ -73,6 +79,6 @@ noremap <C-X>             :xit<CR>
 vnoremap <C-X>            <C-C>:xit<CR>
 inoremap <C-X>            <C-O>:xit<CR>
 " map t to enable text writing options (spell, textwidth)
-noremap \	:set textwidth=70<CR>:set spelllang=el,en<CR>:set spell<CR>
+noremap t	:set textwidth=70<CR>:set spelllang=el,en<CR>:set spell<CR>
 " run current line as shell command
 noremap Q	!!bash<CR>
