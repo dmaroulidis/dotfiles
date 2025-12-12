@@ -161,3 +161,8 @@ symbol = " "
 
 [spack]
 symbol = "🅢 "
+
+[time]
+disabled = false
+format = '🕙[\[ $time \]]($style) '
+time_format = '%T'
