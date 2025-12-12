@@ -22,10 +22,11 @@ $env_var\
 $custom\
 $sudo\
 $cmd_duration\
+$fill\
+$time\
 $line_break\
 $jobs\
 $battery\
-$time\
 $status\
 $os\
 $container\
@@ -59,6 +60,10 @@ symbol = " "
 
 [elm]
 symbol = " "
+
+[fill]
+disabled = false
+symbol = " "
 
 [git_branch]
 symbol = " "
