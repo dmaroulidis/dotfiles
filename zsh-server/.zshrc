@@ -11,6 +11,12 @@ prompt_themes+=( star )
 # This will set the default prompt to the star theme
 prompt star
 
+# This will reset the prompt every second to update the time in RPROMPT
+TMOUT=1
+TRAPALRM() {
+    zle reset-prompt
+}
+
 # Basic zsh config
 ZDOTDIR=${ZDOTDIR:-${HOME}}
 HISTFILE="${ZDOTDIR}/.zsh_history"
