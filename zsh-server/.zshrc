@@ -5,6 +5,7 @@ promptinit
 prompt_star_setup () {
 	PS1=%B%F{yellow}'%n'%f%b' in '%B%F{green}'%m%'f%b' in '%B%F{cyan}%~%f%b$prompt_newline%B'> '%b
 	prompt_opts=(cr subst percent)
+	RPROMPT=%B%F{yellow}'[%D{%H:%M:%S}]'%f%b
 }
 prompt_themes+=( star ) 
 # This will set the default prompt to the star theme
@@ -34,7 +35,6 @@ function addtopath() {
 }
 typeset -U path PATH
 addtopath ~/node_modules/.bin
-addtopath ~/.emacs.d/bin 
 addtopath ~/bin
 #path=(~/.emacs.d/bin ~/bin ~/node_modules/.bin $path)
 export PATH
